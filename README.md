@@ -3,6 +3,9 @@ Illustrates the need to override the equals method when using a class in a colle
 
 This demonstration shows how certain methods in the Collections Framework behave differently depending on whether the equals() and hashCode() methods are properly overridden or not. Specifically, add(), contains(), and remove() are demonstrated.
 
+To run the demo of correct behavior with equals() and hashCode() properly overridden, `java DemoWithEquals`
+To run the demo of incorrect behavior when equals() and hashCode() are not overridden, `java DemoNoEquals`
+
  - NoEquals is a class with a value that does not override equals() or hashCode()
  - WithEquals is a subclass of NoEquals that properly overrides equals() and hashCode(), but behaves the same as NoEquals in all other respects
  - Demo is a generic demo implementation that can take either two NoEquals or two WithEquals (thus ensuring the demo performs the same steps in either scenario)
