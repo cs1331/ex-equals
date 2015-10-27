@@ -6,6 +6,11 @@ import java.util.ArrayList;
 public class Demo {
 
     public static void runDemo(NoEquals foo, NoEquals bar) {
+        System.out.println("Do foo and bar have the same value? "
+                + (foo.getValue() == bar.getValue()));
+        System.out.println("Are foo and bar the same object (class instance)? "
+                + (foo == bar));
+
         Set<NoEquals> demoSet = new HashSet<NoEquals>();
         demoSet.add(foo);
         demoSet.add(bar);
